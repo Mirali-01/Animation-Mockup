@@ -1,0 +1,305 @@
+/* change background colors of each container div */
+
+*{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.topNavbar {
+    /* border: solid red; */
+    background-color: white;
+    display: flex;
+    height: 12vh;
+}
+
+.element {
+    /* border:solid peru; */
+    margin: 2px;
+}
+
+.elementLeft {
+    /* border:solid peru; */
+    margin: 2px;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    } */
+    100%{
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes revspin {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    } */
+    100%{
+        transform: rotate(-359deg);
+    }
+}
+
+.spin{
+    animation: spin 2s infinite linear;
+}
+
+.elementRight {
+    /* border:solid peru; */
+    margin: 2px;
+}
+
+.revspin{
+    animation: revspin 2s infinite linear;
+}
+
+.navOne {
+    /* border: solid brown; */
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.navOneElem {
+    /* border: solid black; */
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navOneElem2 {
+    border: solid gray;
+    background-color: sienna;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.navTwo {
+    /* border: solid brown; */
+    display: flex;
+    width: 45%;
+    justify-content: space-evenly;
+}
+
+.navTwoElem {
+    /* border: solid black; */
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+}
+
+.navTwoElem2 {
+    /* border: solid black; */
+    background-color: firebrick;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navTwoElem2:hover{
+    background-color: forestgreen;
+}
+
+.circle{
+    height: 90%;
+    width: 100%;
+    margin-top: 0.4vh;
+}
+
+.navTwoElem3 {
+    /* border: solid black; */
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+}
+
+.navThree {
+    /* border: solid brown; */
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.navThreeElem {
+    border: solid gray;
+    background-color: darkred;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.navThreeElem2 {
+    border: solid gray;
+    background-image: url("https://i.etsystatic.com/32777778/r/il/4a5e1e/3469331310/il_570xN.3469331310_g7tx.jpg");
+    background-size: cover;
+    font-weight: 600;
+    color: white;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.actionZone{
+    /* border: solid blue; */
+    height: 600px;
+    margin: 2px;
+}
+
+.navOneElem{
+    border: solid gray;
+    background-color: slateblue;
+}
+
+.bouncingBallContainer{
+    border: solid rosybrown;
+    background-color: rosybrown;
+    height: 100px;
+    margin: 2px;
+}
+
+.ball{
+    border: solid slateblue;
+    background-color: slateblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+@keyframes jump {
+    0%{
+        margin-top: 50px;
+    }
+    50%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 50px;
+    }
+}
+
+
+.jump{
+    animation: jump 1s infinite linear;
+}
+
+.rightRectangleContainer{
+    border: solid sienna;
+    background-color: sienna;
+    height: 100px;
+    margin: 2px;
+}
+
+.rectangle{
+    border: solid burlywood;
+    background-color: burlywood;
+    height: 15px;
+    width: 150px;
+    /* border-radius: 1%; */
+    margin: 3px;
+}
+
+@keyframes right {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 330px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+.right{
+    animation: right 3s infinite linear;
+}
+
+.diagonalSquareContainer{
+    border: solid darkred;
+    background-color: darkred;
+    height: 100px;
+    margin: 2px;
+}
+
+.square{
+    border: solid mediumvioletred;
+    background-color: mediumvioletred;
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+}
+
+@keyframes diagonal {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(35px, 35px);
+    }
+    50%{
+        transform: translate(70px, 70px);
+    }
+    75%{
+        transform: translate(35px, 35px);
+    }
+    100%{
+        transform: translate(0px, 0px);;
+    }
+}
+
+.diagonal{
+    animation: diagonal 3s infinite linear;
+}
+
+.surprise{
+    /* border: solid green; */
+    height: 280px;
+    margin: 2px;
+}
+
+.tada{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes zoom {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  .zoom{
+    animation: zoom 1s ease infinite;
+  }

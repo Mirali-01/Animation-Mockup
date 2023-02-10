@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Animation Site</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <!-- top navbar -->
+    <div class="topNavbar">
+      <div class="navOne">
+        <div class="element">
+          <button class="navOneElem" onclick="bounce()">Bounce</button>
+        </div>
+        <div class="element">
+          <button class="navOneElem2" onclick="right()">Slide</button>
+        </div>
+      </div>
+      <div class="navTwo">
+        <div class="elementRight">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbestanimations.com%2FSigns%26Shapes%2FStars%2F3d-white-star-animation7.gif&f=1&nofb=1&ipt=742d9d92dafcd60c69eaea7b1d26196e7670e7f91340595eaef08397d69b8e93&ipo=images"
+            alt=""
+            class="navTwoElem"
+          />
+        </div>
+        <div class="element">
+          <button class="navTwoElem2" onclick="roundRound()">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/50/50446.png"
+              alt=""
+              class="circle"
+            />
+          </button>
+        </div>
+        <div class="elementLeft">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbestanimations.com%2FSigns%26Shapes%2FStars%2F3d-white-star-animation7.gif&f=1&nofb=1&ipt=742d9d92dafcd60c69eaea7b1d26196e7670e7f91340595eaef08397d69b8e93&ipo=images"
+            alt=""
+            class="navTwoElem3"
+          />
+        </div>
+      </div>
+      <div class="navThree">
+        <div class="element">
+          <button class="navThreeElem" onclick="diagonal()">Diagonal</button>
+        </div>
+        <div class="element">
+          <button class="navThreeElem2" onclick="zoomer()">Surprise</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="actionZone">
+      <div class="bouncingBallContainer">
+        <div class="ball"></div>
+      </div>
+
+      <div class="rightRectangleContainer">
+        <div class="rectangle"></div>
+      </div>
+      <div class="diagonalSquareContainer">
+        <div class="square"></div>
+      </div>
+
+      <div class="surprise">
+        <!-- <img
+          src="https://media.tenor.com/APdP8vq4dxQAAAAM/toy-story-mad.gif"
+          alt=""
+          class="tada"
+        /> -->
+      </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
