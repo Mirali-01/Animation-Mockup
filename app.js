@@ -25,7 +25,6 @@ const diagonal = () => {
 
 const zoomer = () => {
     let timeWaster = document.querySelector(".tada")
-    timeWaster.classList.toggle("zoom")
-    
+    timeWaster.classList.toggle("tada2")   
 }
 

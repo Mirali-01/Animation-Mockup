@@ -286,6 +286,14 @@
 .tada{
     height: 100%;
     width: 100%;
+    display: none;
+}
+
+.tada2{
+    height: 100%;
+    width: 100%;
+    display: block;
+    animation: zoom 1s ease infinite;
 }
 
 @keyframes zoom {
